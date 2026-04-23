@@ -18,9 +18,9 @@ export default class PokemonPage {
   public title = inject(Title);
   public meta = inject(Meta);
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id') || '';
+    const name = this.route.snapshot.paramMap.get('name') || '';
     this.pokemonService
-      .getPokemon(id)
+      .getPokemon(name)
       .pipe(
         tap(({ name, id }) => {
           const title = `#${id} - ${name}`;

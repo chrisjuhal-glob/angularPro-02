@@ -29,7 +29,7 @@ export class PokemonService {
       );
   }
 
-  getPokemon(id: string): Observable<Pokemon> {
-    return this.http.get<Pokemon>(`https://pokeapi.co/api/v2/pokemon/${id}`);
+  getPokemon(name: string): Observable<Pokemon> {
+    return this.http.get<Pokemon>(`https://pokeapi.co/api/v2/pokemon/${name}`);
   }
 }
