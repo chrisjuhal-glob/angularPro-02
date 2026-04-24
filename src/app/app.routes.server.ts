@@ -1,11 +1,6 @@
 import { RenderMode, ServerRoute } from '@angular/ssr';
 
 export const serverRoutes: ServerRoute[] = [
-  // ✅ Home (optional)
-  {
-    path: '',
-    renderMode: RenderMode.Prerender,
-  },
 
   // ✅ Pagination (10 pages)
   {

@@ -22,8 +22,7 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/pokemon/pokemon-page'),
   },
   {
-    path: '',
-    redirectTo: 'pokemons',
-    pathMatch: 'full',
+    path: '**',
+    redirectTo: 'about',
   },
 ];
