@@ -39,9 +39,5 @@ describe('App', () => {
     expect(fixture.nativeElement.querySelector('router-outlet')).toBeTruthy();
   });
 
-/*   it('should match snapshot', () => {
-    const fixture = TestBed.createComponent(App);
-    expect(fixture.nativeElement).toMatchSnapshot();
-  }); */
   
 });
